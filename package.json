@@ -1,0 +1,35 @@
+{
+  "name": "arraybuffer-slice",
+  "version": "0.0.1",
+  "description": "Polyfill for ArrayBuffer.prototype.slice.",
+  "main": "index.js",
+  "devDependencies": {
+    "tape" : "~1.1.0"
+  },
+  "scripts" : {
+    "test" : "tape test/*.js"
+  },
+  "keywords": [
+    "array",
+    "buffer",
+    "ArrayBuffer",
+    "slice"
+  ],
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/10..latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ttaubert/node-arraybuffer-slice.git"
+  },
+  "homepage": "https://github.com/ttaubert/node-arraybuffer-slice",
+  "author": {
+    "name": "Tim Taubert",
+    "email": "tim@timtaubert.de",
+    "url": "http://timtaubert.de/"
+  },
+  "license": "MIT"
+}
