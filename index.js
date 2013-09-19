@@ -8,7 +8,7 @@ if (!ArrayBuffer.prototype.slice) {
   ArrayBuffer.prototype.slice = function (begin, end) {
     begin = (begin|0) || 0;
     var num = this.byteLength;
-    end = end === undefined ? num : (end|0);
+    end = end === (void 0) ? num : (end|0);
 
     // Handle negative values.
     if (begin < 0) begin += num;

@@ -1,6 +1,6 @@
 {
   "name": "arraybuffer-slice",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Polyfill for ArrayBuffer.prototype.slice.",
   "main": "index.js",
   "devDependencies": {
