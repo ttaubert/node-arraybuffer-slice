@@ -2,8 +2,6 @@
 // (c) 2013 Tim Taubert <tim@timtaubert.de>
 // arraybuffer-slice may be freely distributed under the MIT license.
 
-"use strict";
-
 if (!ArrayBuffer.prototype.slice) {
   ArrayBuffer.prototype.slice = function (begin, end) {
     begin = (begin|0) || 0;
@@ -11,8 +9,8 @@ if (!ArrayBuffer.prototype.slice) {
     end = end === (void 0) ? num : (end|0);
 
     // Handle negative values.
-    if (begin < 0) begin += num;
-    if (end < 0) end += num;
+    if (begin < 0) begin = Math.max(begin + num, 0);
+    if (end < 0) end = Math.max(end + num, 0);
 
     if (num === 0 || begin >= num || begin >= end) {
       return new ArrayBuffer(0);
