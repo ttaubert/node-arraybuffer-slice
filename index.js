@@ -12,11 +12,7 @@
       return Math.max(val + length, 0);
     }
 
-    if (val > length) {
-      return length;
-    }
-
-    return val;
+    return Math.min(val, length);
   }
 
   if (!ArrayBuffer.prototype.slice) {
