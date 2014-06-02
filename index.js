@@ -33,11 +33,11 @@
         return new ArrayBuffer(0);
       }
 
-      var length = end - begin;
-      var target = new ArrayBuffer(length);
+      var num = end - begin;
+      var target = new ArrayBuffer(num);
       var targetArray = new Uint8Array(target);
 
-      var sourceArray = new Uint8Array(this, begin, length);
+      var sourceArray = new Uint8Array(this, begin, num);
       targetArray.set(sourceArray);
 
       return target;
