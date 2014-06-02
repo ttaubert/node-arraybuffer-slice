@@ -44,6 +44,7 @@ test("slice", function (t) {
 
   t.equal(buf.slice(-2).byteLength, 2);
   t.equal(buf.slice(-4, -2).byteLength, 2);
+  t.equal(buf.slice(-1000, 5).byteLength, 5);
 
   deepEqual(t, buf.slice(5), [5,6,7,8,9]);
   deepEqual(t, buf.slice(0, 5), [0,1,2,3,4]);
