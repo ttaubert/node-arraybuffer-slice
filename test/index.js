@@ -1,5 +1,5 @@
 // https://github.com/ttaubert/node-arraybuffer-slice
-// (c) 2013 Tim Taubert <tim@timtaubert.de>
+// (c) 2014 Tim Taubert <tim@timtaubert.de>
 // arraybuffer-slice may be freely distributed under the MIT license.
 
 "use strict";
